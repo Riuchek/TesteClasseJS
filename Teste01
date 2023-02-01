@@ -1,0 +1,18 @@
+class Livros {
+    constructor(nome, editora, paginas) {
+        this.nome = nome;
+        this.editora = editora;
+        this.paginas = paginas;
+    }
+    analisarTitulo(){
+        console.log(`${this.nome} é o titulo deste livro e `);
+    }
+    descreverTitulo(){
+        console.log(`${this.editora} é a editora responsavel por este livro com ${this.paginas} paginas  `);
+    }
+}
+
+const NodeJS = new Livros("Harry Potter","Hasbro",149);
+
+NodeJS.analisarTitulo();
+NodeJS.descreverTitulo();
